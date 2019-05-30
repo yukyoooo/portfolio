@@ -167,10 +167,25 @@ header {
 .top-wrapper{
   height: 820px; /*高さ画面幅１００％*/
   margin-top:60px;
+  background-image: url(img/top.jpg);
+  background-size: cover;
 }
-.top-img {
-  width:100%;
+.top-text{
+  background-color:rgba(255, 255, 255, 0);
+  padding-top:250px;
 }
+.top-text p{
+  background-color:rgba(255, 255, 255, 0);
+  color: #fff0f5;
+  font-weight: bold;
+  font-size:60px;
+}
+.top-text i{
+  color:white;
+  background-color:rgba(255, 255, 255, 0);
+  font-size:50px;
+}
+
 
 /*  */
 /*  aboutThisSiteページ*/
@@ -303,14 +318,21 @@ header {
 }
 
 
-
+/*  上に飛ぶボタン*/
+.up-btn{
+  margin: auto;
+  font-size:40px;
+}
+.up-btn a{
+  cursor : pointer;
+}
 
 
 /*  フッター*/
-footer {
+footer{
   width:100%;
   height:80px;
-  background-color: rgba(34, 49, 52, 0.9);
+  background: linear-gradient(to bottom, #cd5c5c 0%, #800000 100%);
 }
 
 footer p{
