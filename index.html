@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.min.css">
     <title>yukyo's portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
@@ -70,13 +71,10 @@
 
 
     <div class="top-wrapper">
-      <div class="top-image">
-        <img src="img\top.jpg" width="100%">
-      </div>
-      <div class="container">
         <div class="top-text">
+          <p class="animated flipInX ">Yukyo's Portfolio</p>
+          <i class="far fa-hand-peace animated heartBeat infinite"></i>
         </div>
-      </div>
     </div>
 
 
@@ -94,7 +92,7 @@
     <div  id="aboutMe" class="aboutMe-wrapper">
       <div class="container">
         <h2>About me</h2>
-        <div class="aboutMe-image">
+        <div class="aboutMe-image animated zoomIn">
           <img src="img\aboutme.jpg" width="100%">
         </div>
         <div class="aboutMe-text">
@@ -145,9 +143,9 @@
     </form>
 
 
-
-
-
+    <div class="up-btn animated bounce infinite">
+      <a id="top-btn2" class="fas fa-angle-double-up"></a>
+    </div>
 
 
     <footer>
@@ -158,5 +156,6 @@
     </div>
   </footer>
 <script src = "script.js"></script>
+
 </body>
 </html>
