@@ -1,0 +1,162 @@
+/*  タブレット向けレイアウト*/
+@media all and (max-width: 1024px) {
+
+/*  */
+/*  top*/
+/*  */
+.top-wrapper{height:50vh;}
+
+/*  aboutThisSite*/
+.aboutThisSite-wrapper{height:50vh;}
+
+/*  aboutMe*/
+.aboutMe-wrapper{height:65vh;}
+.aboutMe-image img{height:420px;}
+.aboutMe-text{height: 420px;}
+
+/*  portfolio*/
+.portfolio-wrapper{height:70vh;}
+
+/*  form*/
+.form-wrapper{height:50vh;}
+
+}
+
+
+/*  スマホ向けレイアウト*/
+@media (max-width:720px) {
+
+h2{
+  font-size:30px;
+}
+
+/* ヘッダーについて*/
+header{width:100%;}
+.header-right{display:none;}
+/*  ハンバーガーアイコン*/
+#nav-drawer {
+  position: relative;
+  padding:15px 5% 0px 30%;
+  margin-left:50%;
+  background-color: rgba(255, 255, 255, 0);
+}
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+/*アイコンのスペース*/
+#nav-open {
+    display: inline-block;
+    width: 30px;
+    margin-top:4px;
+    height: 22px;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0);
+}
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 4px;/*線の太さ*/
+    width: 30px;/*長さ*/
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
+#nav-open span:before {
+    bottom: -10px;
+}
+#nav-open span:after {
+    bottom: -20px;
+}
+/*閉じる用の薄黒カバー*/
+#nav-close {
+    display: none;/*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;/*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+/*中身*/
+#nav-content {
+    overflow: auto;
+    position: fixed;
+    top: -16px;
+    left: 0px;
+    z-index: 9999;/*最前面に*/
+    width: 90%;/*右側に隙間を作る*/
+    max-width: 160px;/*最大幅*/
+    height: 100%;
+    background: #fff;/*背景色*/
+    transition: .3s ease-in-out;/*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);/*左に隠しておく*/
+    font-weight:normal;
+    line-height: 40px;
+    color: #555;
+    padding:0px 10px;
+}
+li{  border-bottom:1px solid #dcdcdc;background-color: rgba(255, 255, 255, 0);}
+a{display: block;color:#808080;font-size:13px;background-color: rgba(255, 255, 255, 0);}
+.careerlab {
+  display:block;
+  padding-top:15px;
+  padding-bottom:5px;
+  color:#800000;
+  font-size:20px;
+  font-weight: bold;
+}
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+    display: block;/*カバーを表示*/
+    opacity: .5;
+}
+#nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);/*中身を表示*/
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+
+
+
+
+
+/*  top*/
+.top-wrapper{height:75vh;padding-top:30%;}
+.top-text p{font-size:35px;}
+.top-text i{font-size:30px;}
+/*  aboutthissite*/
+.aboutThisSite-wrapper{height:65vh;}
+.aboutThisSite-text p{
+  font-size:20px;
+  line-height:35px;
+  margin:0px 5%;
+}
+/*  aboutMeページ*/
+.aboutMe-wrapper{height:1000px;padding-top:20%;}
+.aboutMe-image{width:100%;}
+.aboutMe-image img{height:300px;}
+.aboutMe-text{width:100%;margin:0px;height:550px;}
+.aboutMe-text p{
+  font-size:20px;
+  line-height:35px;
+  margin:0px 5%;
+}
+/*  portfolioページ*/
+.portfolio-wrapper {height: 1100px;padding-top:20%;}
+.portfolio-left{ width:100%;margin:10px 0;height:300px;}
+.portfolio-wrapper img{height:300px;margin:0 0 10px;}
+.portfolio-right{width: 100%;margin:0px;position: static;}
+.portfolio-image{height:310px;}
+/*  formページ*/
+.form-wrapper{height:650px; padding-top:20%;}
+.form-sheet{width:90%;}
+/*  上に飛ぶボタン*/
+.up-btn a{font-size:40px;}
