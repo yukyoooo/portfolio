@@ -70,6 +70,7 @@
 
 
 
+
     <div class="top-wrapper">
         <div class="top-text">
           <p class="animated flipInX ">Yukyo's Portfolio</p>
@@ -80,9 +81,13 @@
 
     <div id="aboutThisSite" class="aboutThisSite-wrapper">
       <div class="container">
-        <div class="aboutThisSite-text">
-          <h2>About this site</h2>
-          <p>Hi! My name is Yukyo Moriyama. Please call me yukyo. Welcome to my portfolio website. I compile my works, skills and profile here. I hope that you will know me through this website. if you want to hear something, take a button on lower right.Enjoy reading!</p>
+        <div class="effect">
+          <div class="effect-move">
+          <div class="aboutThisSite-text">
+            <h2>About this site</h2>
+            <p>Hi! My name is Yukyo Moriyama. Please call me yukyo. Welcome to my portfolio website. I compile my works, skills and profile here. I hope that you will know me through this website. if you want to hear something, take a button on lower right.Enjoy reading!</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -91,13 +96,23 @@
 
     <div  id="aboutMe" class="aboutMe-wrapper">
       <div class="container">
-        <h2>About me</h2>
-        <div class="aboutMe-image animated zoomIn">
-          <img src="img\aboutme.jpg" width="100%">
+        <h2 >About me</h2>
+        <div class="effect">
+          <div class="effect-move">
+          <ul id="slide_wrapp" class="aboutMe-image "><!--スライド親要素 -->
+            <li class="slide_item">
+              <img src="img\aboutme.jpg" width="120%">
+            </li>
+            <li class="slide_item">
+              <img src="img\top.jpg" width="100%">
+            </li>
+          </ul>
+          </div>
+          <div class="aboutMe-text">
+            <h2><span>I'm</span> Yukyo Moriyama</h2>
+            <p>Hi! My name is Yukyo Moriyama. Please call me yukyo. Welcome to my portfolio website. I compile my works, skills and profile here. I hope that you will know me through this website. if you want to hear something, take a button on lower right.Enjoy reading!</p>
+          </div>
         </div>
-        <div class="aboutMe-text">
-          <h2><span>I'm</span> Yukyo Moriyama</h2>
-          <p>Hi! My name is Yukyo Moriyama. Please call me yukyo. Welcome to my portfolio website. I compile my works, skills and profile here. I hope that you will know me through this website. if you want to hear something, take a button on lower right.Enjoy reading!</p>
         </div>
       </div>
     </div>
@@ -107,45 +122,52 @@
     <div id="portfolio" class="portfolio-wrapper">
       <div class="container">
         <h2>Portfolio</h2>
-        <div class="portfolio-left">
-          <div class="portfolio-image">
-            <img src="img\aboutme.jpg" width="100%" height="600">
-          </div>
-        </div>
-        <div class="portfolio-right">
-          <div class="portfolio-up">
+        <div class="effect">
+          <div class="effect-move">
+          <div class="portfolio-left">
             <div class="portfolio-image">
-              <img src="img\aboutme.jpg" width="100%" height="290">
+              <img src="img\aboutme.jpg" width="100%" height="600">
             </div>
           </div>
-          <div class="portfolio-down">
-            <div class="portfolio-image">
-              <img src="img\aboutme.jpg" width="100%" height="290">
+          <div class="portfolio-right">
+            <div class="portfolio-up">
+              <div class="portfolio-image">
+                <img src="img\aboutme.jpg" width="100%" height="290">
+              </div>
+            </div>
+            <div class="portfolio-down">
+              <div class="portfolio-image">
+                <img src="img\aboutme.jpg" width="100%" height="290">
+              </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </div>
-
 
 
     <form id="form" class="form-wrapper" action="">
       <h2>Contact</h2>
-      <div class="form-sheet">
-        <div class="form-nameAndEmail">
-        </div>
-        <div class="form-Message">
-        </div>
-        <div class="submit">
-          <a class="far fa-envelope"></a>
+      <div class="effect">
+        <div class="effect-move">
+          <div class="form-sheet">
+            <div class="form-nameAndEmail">
+            </div>
+            <div class="form-Message">
+            </div>
+            <div class="submit">
+              <a class="far fa-envelope"></a>
+            </div>
+          </div>
         </div>
       </div>
     </form>
 
-
     <div class="up-btn animated bounce infinite">
       <a id="top-btn2" class="fas fa-angle-double-up"></a>
     </div>
+
 
 
     <footer>
