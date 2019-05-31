@@ -20,14 +20,18 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
   padding: 0 15px;
   margin: 0 auto;
 }
-
-
 body {
 font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+}
 
+/*  effectのクラスの子要素effect-moveをスクロール時発動*/
+.effect-move{
+  transition: 1.2s;
 }
 
 
+
+/*  右下のお問い合わせボタン*/
 #fab {
     display: block;
     width: 56px;
@@ -64,8 +68,9 @@ font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒ�
 
 #fab:hover .fa:before {
   content: '\f2b6';/*変更後のアイコン*/
-
 }
+
+
 
 
 /* ヘッダーについて*/
@@ -169,6 +174,7 @@ header {
   margin-top:60px;
   background-image: url(img/top.jpg);
   background-size: cover;
+  height: 100vh;
 }
 .top-text{
   background-color:rgba(255, 255, 255, 0);
@@ -191,13 +197,12 @@ header {
 /*  aboutThisSiteページ*/
 /*  */
 .aboutThisSite-wrapper{
-  height: 850px;
-  padding-top:200px;
-
+  height: 100vh;
+  padding-top:25%;
 }
 .aboutThisSite-text{
   text-align: center;
-  padding-top:170px;
+
 }
 .aboutThisSite-text p{
   line-height: 35px;
@@ -210,23 +215,25 @@ header {
 /*  aboutMeページ*/
 /*  */
 .aboutMe-wrapper{
-  height: 900px;
+  height: 100vh;
   text-align: center;
-  padding-top:200px;
+  padding-top:10%;
 }
 .aboutMe-image{
   float:left;
   width:45%;
+  margin:0px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
 }
 .aboutMe-image img{
   height: 500px;
+  width:100%;
 }
 .aboutMe-text{
   float: left;
   height:500px;
   margin-left:2%;
   width:53%;
-  padding-top:30px;
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
 }
@@ -239,7 +246,7 @@ header {
 .aboutMe-text h2{
   background-color: white;
   font-size: 25px;
-  padding-bottom:30px;
+  padding:30px 0px;
   margin:30px 10%;
   border-bottom:1px solid #c0c0c0;
 }
@@ -247,13 +254,39 @@ header {
   font-weight: normal;
   background-color: white;
 }
+/*  スライドで色々な写真をズームしながらのせる*/
+#slide_wrapp {
+  position: relative;
+  overflow: hidden;
+}
+#slide_wrapp .slide_item {
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 2s linear, transform 7.5s linear;
+  position: relative;
+  z-index: 1;
+}
+#slide_wrapp .slide_item:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#slide_wrapp .slide_item.show_ {
+  opacity: 1;
+}
+#slide_wrapp .slide_item.zoom_ {
+  transform: scale(1.1);
+}
+#slide_wrapp .slide_item img {
+  display: block;
+}
 
 /*  */
 /*  portfolioページ*/
 /*  */
 .portfolio-wrapper {
-  height:800px;
-  padding-top:150px;
+  height: 100vh;
+  padding-top:8%;
 }
 .portfolio-left{
   float: left;
@@ -275,8 +308,8 @@ header {
 
 
 .form-wrapper{
-  height:650px;
-  margin-top:200px;
+  height: 70vh;
+  margin-top:10%;
 }
 .form-sheet{
   position:relative;
