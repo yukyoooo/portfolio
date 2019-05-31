@@ -13,6 +13,11 @@ $(function(){
       'scrollTop': 0
     }, 'slow');
   });
+  $('#top-btn3').click(function(){
+    $('html,body').animate({
+      'scrollTop': 0
+    }, 'slow');
+  });
 
   // ヘッダー内の<a>タグをクリックしたときのclickイベントを作成してください。
 
