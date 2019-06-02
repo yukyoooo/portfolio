@@ -20,6 +20,7 @@ h2 {
 }
 body {
 font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+
 }
 
 /*  effectのクラスの子要素effect-moveをスクロール時発動*/
@@ -176,13 +177,13 @@ header {
 }
 .top-text{
   background-color:rgba(255, 255, 255, 0);
-  padding-top:21%;
 }
 .top-text p{
   background-color:rgba(255, 255, 255, 0);
   color: #fff0f5;
   font-weight: bold;
   font-size:60px;
+  padding-top:40vh;
 }
 .top-text i{
   color:white;
@@ -196,7 +197,7 @@ header {
 /*  */
 .aboutThisSite-wrapper{
   height: 100vh;
-  padding-top:25%;
+  padding-top:20%;
 }
 .aboutThisSite-text{
   text-align: center;
@@ -213,7 +214,7 @@ header {
 /*  aboutMeページ*/
 /*  */
 .aboutMe-wrapper{
-  height: 100vh;
+  height: 110vh;
   text-align: center;
   padding-top:10%;
 }
@@ -239,14 +240,15 @@ header {
 .aboutMe-text p{
   background-color: white;
   line-height: 35px;
-  font-size:20px;
+  font-size:18px;
   margin:0px 10%;
+
 }
 .aboutMe-text h2{
   background-color: white;
   font-size: 25px;
-  padding:30px 0px;
-  margin:30px 10%;
+  padding:20px 0px;
+  margin:20px 10%;
   border-bottom:1px solid #c0c0c0;
 }
 .aboutMe-text span{
@@ -273,6 +275,7 @@ header {
 #slide_wrapp {
   position: relative;
   overflow: hidden;
+  padding: 0px;
 }
 #slide_wrapp .slide_item {
   opacity: 0;
@@ -300,7 +303,7 @@ header {
 /*  portfolioページ*/
 /*  */
 .portfolio-wrapper {
-  height: 100vh;
+  height: 120vh;
   padding-top:8%;
 }
 .portfolio-left{
@@ -320,6 +323,11 @@ header {
 .portfolio-left img{
   height:600px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+  transition: .2s;
+  cursor : pointer;
+}
+.portfolio-left img:hover{
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,.12), 0 6px 6px 0 rgba(0,0,0,.24);
 }
 .portfolio-right img {
   height:290px;
@@ -336,6 +344,76 @@ header {
   background-color: rgba(255, 255, 255, 0)
 }
 
+/*  portfolio-1*/
+/*モーダル*/
+/* モーダル部分のCSSを貼り付けてください */
+.portfolio-1-wrapper, .portfolio-2-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+  display: none;
+}
+.portfolio-form{
+  margin:auto;
+  margin-top:15vh;
+  background-color: rgba(0, 0, 0, 0.0);
+  max-width: 1000px;
+}
+.close-modal{
+  position: absolute;
+  top:10px;
+  right:15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #800000;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .1s;
+  cursor : pointer;
+}
+.close-modal i{
+  background-color: rgba(0, 0, 0, 0.0);
+  line-height: 40px;
+  color:white;
+  font-size: 25px;
+}
+.close-modal:hover{
+  background:#a52a2a;/*背景色を変更*/
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);/*浮き上がる*/
+}
+.portfolio-1-text{
+  float: left;
+  width:40%;
+  height:500px;
+  text-align: center;
+  padding:30px 10px;
+}
+.portfolio-1-text p {
+  padding:10px 0;
+}
+.portfolio-1-text h2{
+  border-bottom: 1px solid #696969;
+  padding:40px 0 10px 0;
+  margin:0 20px;
+}
+.portfolio-1-image{
+  float: left;
+  width: 60%;
+  height:500px;
+  position: relative;
+}
+.portfolio-1-image img{
+  height:90%;
+  margin-top:30px;
+  margin-right:40px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+}
 
 
 
@@ -343,8 +421,8 @@ header {
 /*  formページ*/
 /*  */
 .form-wrapper{
-  height: 70vh;
-  margin-top:10%;
+  height: 700px;;
+  padding-top:7%;
 }
 .form-sheet{
   position:relative;
@@ -354,10 +432,8 @@ header {
   max-width: 600px;
   background-color: white;
   box-shadow: 0 6px 30px 0 rgba(0,0,0,0.3);
+  padding-top:60px;
 }
-
-
-
 .submit {
     width: 70px;
     display: block;
@@ -385,6 +461,59 @@ header {
 .submit a:hover{
   font-size:35px;
 }
+/*  */
+/*  フォーム*/
+.input-field{
+  background-color: white;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+.contact-name{
+    text-align: left;
+    padding-left:30px;
+    padding-bottom: 0px;
+}
+.contact-email{
+    text-align: left;
+    padding-left:30px;
+    padding-bottom: 0px;
+}
+.contact-message{
+    text-align: left;
+    padding-left:40px;
+    padding-bottom: 0px;
+    padding-right:20px;
+}
+
+
+
+label{
+  background-color:rgba(255, 255, 255, 0);
+  position: absolute;
+  left:10%;
+  top:0;
+  color:#696969;
+  font-size:20px;
+
+}
+input, textarea {
+    width: 70%;
+    display: block;
+    padding: 8px 0;
+    font-size: 15px;
+    line-height: 24px;
+    border: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #BFBFBF;
+    margin:0 20% 0 10%;
+    background-color: white;
+}
+
+
+
+
+
 
 
 /*  上に飛ぶボタン*/
