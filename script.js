@@ -3,21 +3,12 @@ $(function(){
 
 
   // トップへ戻るボタン
-  $('#top-btn').click(function(){
+  $('.top-btn').click(function(){
     $('html,body').animate({
       'scrollTop': 0
     }, 'slow');
   });
-  $('#top-btn2').click(function(){
-    $('html,body').animate({
-      'scrollTop': 0
-    }, 'slow');
-  });
-  $('#top-btn3').click(function(){
-    $('html,body').animate({
-      'scrollTop': 0
-    }, 'slow');
-  });
+
 
   // ヘッダー内の<a>タグをクリックしたときのclickイベントを作成してください。
 
@@ -104,6 +95,40 @@ function sliderStart() {
     }, IntarvalTime);
 
 }
+
+// ポートフォリオおしたら表示
+$('#portfolio-1-show').click(function(){  //clickイベントでモーダルを表示
+  $('#portfolio-1-modal').fadeIn();
+});
+// 「.close-modal」要素にclickイベントを設定してください
+    $('.close-modal').click(function(){
+    $('#portfolio-1-modal').fadeOut();
+    $('#portfolio-2-modal').fadeOut();
+    $('#portfolio-3-modal').fadeOut();
+  });
+
+
+// フォームの入力部分をおすと表示（名前メアドメッセージ）が小さくなる
+$('.contact-name').click(function(){
+  $('.label-name').animate({
+    'font-size':'5px'
+}, 150);
+});
+
+$('.contact-email').click(function(){
+  $('.label-email').animate({
+    'font-size':'5px'
+}, 150);
+});
+
+$('.contact-message').click(function(){
+  $('.label-message').animate({
+    'font-size':'5px'
+}, 150);
+});
+
+
+
 
 
 });
