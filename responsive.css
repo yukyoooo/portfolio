@@ -5,6 +5,7 @@
 /*  top*/
 /*  */
 .top-wrapper{height:50vh;}
+.top-text p{padding-top:16vh;}
 
 /*  aboutThisSite*/
 .aboutThisSite-wrapper{height:50vh;}
@@ -130,7 +131,7 @@ a{display: block;color:#808080;font-size:13px;background-color: rgba(255, 255, 2
 
 /*  top*/
 .top-wrapper{height:75vh;padding-top:30%;}
-.top-text p{font-size:35px;}
+.top-text p{font-size:35px;padding-top:10vh;}
 .top-text i{font-size:30px;}
 /*  aboutthissite*/
 .aboutThisSite-wrapper{height:65vh;}
@@ -146,15 +147,20 @@ a{display: block;color:#808080;font-size:13px;background-color: rgba(255, 255, 2
 .aboutMe-text{width:100%;margin:0px;height:550px;}
 .aboutMe-text p{
   font-size:20px;
-  line-height:35px;
+  line-height:30px;
   margin:0px 5%;
+  text-align: left;
 }
+.aboutMe-text h2{margin:20px 10%;font-size:22px;}
 /*  portfolioページ*/
 .portfolio-wrapper {height: 1100px;padding-top:20%;}
 .portfolio-left{ width:100%;margin:10px 0;height:300px;}
 .portfolio-wrapper img{height:300px;margin:0 0 10px;}
 .portfolio-right{width: 100%;margin:0px;position: static;}
 .portfolio-image{height:310px;}
+.portfolio-1-text{width:80%;margin:0 10%; height: 45vh;}
+.portfolio-1-image{width:80%;height: 30vh;margin:0 10%; position:relative; }
+.portfolio-1-image img{position:absolute;top:10px; left:40px;}
 /*  formページ*/
 .form-wrapper{height:650px; padding-top:20%;}
 .form-sheet{width:90%;}
