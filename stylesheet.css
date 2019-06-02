@@ -488,7 +488,7 @@ header {
 
 
 
-label{
+.input-field label{
   background-color:rgba(255, 255, 255, 0);
   position: absolute;
   left:10%;
