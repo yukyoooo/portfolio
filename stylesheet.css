@@ -55,8 +55,8 @@ font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒ�
 }
 #fab:hover {
   background:#800000;/*背景色を変更*/
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);/*浮き上がる*/}
-
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);/*浮き上がる*/
+}
 #fab:hover i {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);/*回転角度*/
@@ -248,7 +248,7 @@ header {
   background-color: white;
   font-size: 25px;
   padding:20px 0px;
-  margin:20px 10%;
+  margin:40px 10%;
   border-bottom:1px solid #c0c0c0;
 }
 .aboutMe-text span{
@@ -403,7 +403,7 @@ header {
   margin:0 20px;
 }
 .portfolio-1-image{
-  float: left;
+  float: right;
   width: 60%;
   height:500px;
   position: relative;
