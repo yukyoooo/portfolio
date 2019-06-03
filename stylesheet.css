@@ -341,6 +341,9 @@ header {
   position: absolute;
   bottom: 30px;
   left:30px;
+  color:white;
+  font-size:25px;
+  font-weight: bold;
   background-color: rgba(255, 255, 255, 0)
 }
 
@@ -392,21 +395,34 @@ header {
   width:40%;
   height:500px;
   text-align: center;
-  padding:30px 10px;
+  padding:30px 40px;
+  line-height: 30px;
+  background-color: white;
 }
 .portfolio-1-text p {
   padding:10px 0;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+.portfolio-1-text a{
+  background-color: rgba(0, 0, 0, 0.0);
+  font-weight: bold;
+  font-size: 20px;
+}
+.portfolio-1-text i{
+  background-color: rgba(0, 0, 0, 0.0);
 }
 .portfolio-1-text h2{
   border-bottom: 1px solid #696969;
   padding:40px 0 10px 0;
   margin:0 20px;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 .portfolio-1-image{
   float: right;
   width: 60%;
   height:500px;
   position: relative;
+  background-color: white;
 }
 .portfolio-1-image img{
   height:90%;
@@ -445,6 +461,7 @@ header {
     background-color:#800000;
     opacity:0.8;
     transition:all 0.5s;
+    border:none;
 }
   .submit:hover {
   opacity:1;
@@ -455,7 +472,7 @@ header {
   display: inline-block;
   background-color:#800000;
   font-size:30px;
-  line-height: 400px;
+  line-height: 390px;
   transition: all 0.15s;
 }
 .submit a:hover{
