@@ -4,28 +4,29 @@
 /*  */
 /*  top*/
 /*  */
-.top-wrapper{height:50vh;}
-.top-text p{padding-top:16vh;}
+.top-wrapper{height:700px;}
+.top-text p{padding-top:300px;}
 
 /*  aboutThisSite*/
-.aboutThisSite-wrapper{height:50vh;}
+.aboutThisSite-wrapper{height:500px;}
 
 /*  aboutMe*/
-.aboutMe-wrapper{height:65vh;}
-.aboutMe-image img{height:420px;}
-.aboutMe-text{height: 420px;}
-
+.aboutMe-wrapper{height:700px;padding-top:20%;}
+.aboutMe-image img{height:450px;}
+.aboutMe-text{height: 450px;}
+.aboutMe-text p{line-height: 28px;  margin:0px 5%;}
+.aboutMe-text h2{padding:10px 0; margin:30px 10%;}
 /*  portfolio*/
-.portfolio-wrapper{height:70vh;}
+.portfolio-wrapper {height:900px;padding-top:20%;}
 
 /*  form*/
-.form-wrapper{height:50vh;}
+.form-wrapper{height:750px;padding-top:13%}
 
 }
 
 
 /*  スマホ向けレイアウト*/
-@media (max-width:720px) {
+@media (max-width:761px) {
 
 h2{
   font-size:30px;
@@ -159,10 +160,30 @@ a{display: block;color:#808080;font-size:13px;background-color: rgba(255, 255, 2
 .portfolio-right{width: 100%;margin:0px;position: static;}
 .portfolio-image{height:310px;}
 .portfolio-1-text{width:80%;margin:0 10%; height: 45vh;}
+.portfolio-1-text h2{padding-top:10px;}
+.portfolio-1-text p{padding:0px;}
 .portfolio-1-image{width:80%;height: 30vh;margin:0 10%; position:relative; }
 .portfolio-1-image img{position:absolute;top:10px; left:40px;}
+
 /*  formページ*/
 .form-wrapper{height:650px; padding-top:20%;}
 .form-sheet{width:90%;}
 /*  上に飛ぶボタン*/
 .up-btn a{font-size:40px;}
+
+
+
+
+}
+@media (max-width:320px) {
+
+.aboutThisSite-wrapper{height:80vh;}
+.aboutMe-image img{height:250px;}
+.aboutMe-text p{
+  font-size:18px;
+  line-height:28px;
+  margin:0px 5%;
+  text-align: left;
+}
+.portfolio-1-text p{line-height: 20px;}
+.portfolio-1-text{padding:20px;}
