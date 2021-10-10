@@ -100,6 +100,9 @@ function sliderStart() {
 $('#portfolio-1-show').click(function(){  //clickイベントでモーダルを表示
   $('#portfolio-1-modal').fadeIn();
 });
+$('#portfolio-2-show').click(function(){  //clickイベントでモーダルを表示
+  $('#portfolio-2-modal').fadeIn();
+});
 // 「.close-modal」要素にclickイベントを設定してください
     $('.close-modal').click(function(){
     $('#portfolio-1-modal').fadeOut();
