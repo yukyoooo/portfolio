@@ -242,7 +242,7 @@ header {
   line-height: 35px;
   font-size:18px;
   margin:0px 10%;
-
+  text-align: left;
 }
 .aboutMe-text h2{
   background-color: white;
